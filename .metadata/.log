@@ -7,3 +7,236 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.equinox.app 0 0 2022-04-25 14:37:43.817
 !MESSAGE Product com.yakindu.sct.products.product could not be found.
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-04-25 15:03:26.415
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-04-25 15:03:26.429
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-04-25 15:03:26.429
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.jface 2 0 2022-04-25 15:05:10.084
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-25 15:05:10.084
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.eof,EOF,
+		Send end of file,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7778822b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3145b833,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3145b833,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+
+!ENTRY org.yakindu.sct.builder.SCTBuilder 2 0 2022-04-25 15:21:40.207
+!MESSAGE Cannot generate Code for Statechart /hu.bme.mit.yakindu.analysis/model_input/example.sct. The file contains errors.
+
+!ENTRY org.yakindu.sct.builder.SCTBuilder 2 0 2022-04-25 15:25:37.137
+!MESSAGE Cannot generate Code for Statechart /hu.bme.mit.yakindu.analysis/model_input/example.sct. The file contains errors.
+
+!ENTRY org.yakindu.sct.simulation.core 4 765 2022-04-25 15:25:38.169
+!MESSAGE An unexpected error ocurred during simulation.
+!STACK 0
+java.lang.NullPointerException
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping._init_create_4(SexecElementMapping.java:331)
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping.create(SexecElementMapping.java:310)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping._mapState(StructureMapping.java:225)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapState(StructureMapping.java:418)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.lambda$6(StructureMapping.java:209)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:351)
+	at java.base/java.util.LinkedHashSet.<init>(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1190)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:366)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapRegularStates(StructureMapping.java:212)
+	at org.yakindu.sct.model.sexec.transformation.ModelSequencer.transform(ModelSequencer.java:70)
+	at org.yakindu.sct.simulation.core.sexec.container.AbstractExecutionFlowSimulationEngine.init(AbstractExecutionFlowSimulationEngine.java:67)
+	at org.yakindu.sct.simulation.core.sexec.container.CycleBasedSimulationEngine.init(CycleBasedSimulationEngine.java:44)
+	at org.yakindu.sct.simulation.core.debugmodel.SCTDebugTarget.init(SCTDebugTarget.java:68)
+	at org.yakindu.sct.simulation.core.launch.AbstractSCTLaunchConfigurationDelegate.launch(AbstractSCTLaunchConfigurationDelegate.java:67)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.yakindu.sct.simulation.core 4 765 2022-04-25 15:25:53.064
+!MESSAGE An unexpected error ocurred during simulation.
+!STACK 0
+java.lang.NullPointerException
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping._init_create_4(SexecElementMapping.java:331)
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping.create(SexecElementMapping.java:310)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping._mapState(StructureMapping.java:225)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapState(StructureMapping.java:418)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.lambda$6(StructureMapping.java:209)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:351)
+	at java.base/java.util.LinkedHashSet.<init>(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1190)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:366)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapRegularStates(StructureMapping.java:212)
+	at org.yakindu.sct.model.sexec.transformation.ModelSequencer.transform(ModelSequencer.java:70)
+	at org.yakindu.sct.simulation.core.sexec.container.AbstractExecutionFlowSimulationEngine.init(AbstractExecutionFlowSimulationEngine.java:67)
+	at org.yakindu.sct.simulation.core.sexec.container.CycleBasedSimulationEngine.init(CycleBasedSimulationEngine.java:44)
+	at org.yakindu.sct.simulation.core.debugmodel.SCTDebugTarget.init(SCTDebugTarget.java:68)
+	at org.yakindu.sct.simulation.core.launch.AbstractSCTLaunchConfigurationDelegate.launch(AbstractSCTLaunchConfigurationDelegate.java:67)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.yakindu.sct.builder.SCTBuilder 2 0 2022-04-25 15:26:17.021
+!MESSAGE Cannot generate Code for Statechart /hu.bme.mit.yakindu.analysis/model_input/example.sct. The file contains errors.
+
+!ENTRY org.yakindu.sct.simulation.core 4 765 2022-04-25 15:26:17.838
+!MESSAGE An unexpected error ocurred during simulation.
+!STACK 0
+java.lang.NullPointerException
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping._init_create_4(SexecElementMapping.java:331)
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping.create(SexecElementMapping.java:310)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping._mapState(StructureMapping.java:225)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapState(StructureMapping.java:418)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.lambda$6(StructureMapping.java:209)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:351)
+	at java.base/java.util.LinkedHashSet.<init>(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1190)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:366)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapRegularStates(StructureMapping.java:212)
+	at org.yakindu.sct.model.sexec.transformation.ModelSequencer.transform(ModelSequencer.java:70)
+	at org.yakindu.sct.simulation.core.sexec.container.AbstractExecutionFlowSimulationEngine.init(AbstractExecutionFlowSimulationEngine.java:67)
+	at org.yakindu.sct.simulation.core.sexec.container.CycleBasedSimulationEngine.init(CycleBasedSimulationEngine.java:44)
+	at org.yakindu.sct.simulation.core.debugmodel.SCTDebugTarget.init(SCTDebugTarget.java:68)
+	at org.yakindu.sct.simulation.core.launch.AbstractSCTLaunchConfigurationDelegate.launch(AbstractSCTLaunchConfigurationDelegate.java:67)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.yakindu.sct.builder.SCTBuilder 2 0 2022-04-25 15:26:27.835
+!MESSAGE Cannot generate Code for Statechart /hu.bme.mit.yakindu.analysis/model_input/example.sct. The file contains errors.
+
+!ENTRY org.yakindu.sct.simulation.core 4 765 2022-04-25 15:26:28.670
+!MESSAGE An unexpected error ocurred during simulation.
+!STACK 0
+java.lang.NullPointerException
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping._init_create_4(SexecElementMapping.java:331)
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping.create(SexecElementMapping.java:310)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping._mapState(StructureMapping.java:225)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapState(StructureMapping.java:418)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.lambda$6(StructureMapping.java:209)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:351)
+	at java.base/java.util.LinkedHashSet.<init>(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1190)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:366)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapRegularStates(StructureMapping.java:212)
+	at org.yakindu.sct.model.sexec.transformation.ModelSequencer.transform(ModelSequencer.java:70)
+	at org.yakindu.sct.simulation.core.sexec.container.AbstractExecutionFlowSimulationEngine.init(AbstractExecutionFlowSimulationEngine.java:67)
+	at org.yakindu.sct.simulation.core.sexec.container.CycleBasedSimulationEngine.init(CycleBasedSimulationEngine.java:44)
+	at org.yakindu.sct.simulation.core.debugmodel.SCTDebugTarget.init(SCTDebugTarget.java:68)
+	at org.yakindu.sct.simulation.core.launch.AbstractSCTLaunchConfigurationDelegate.launch(AbstractSCTLaunchConfigurationDelegate.java:67)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.yakindu.sct.builder.SCTBuilder 2 0 2022-04-25 15:26:39.850
+!MESSAGE Cannot generate Code for Statechart /hu.bme.mit.yakindu.analysis/model_input/example.sct. The file contains errors.
+
+!ENTRY org.yakindu.sct.simulation.core 4 765 2022-04-25 15:26:40.651
+!MESSAGE An unexpected error ocurred during simulation.
+!STACK 0
+java.lang.NullPointerException
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping._init_create_4(SexecElementMapping.java:331)
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping.create(SexecElementMapping.java:310)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping._mapState(StructureMapping.java:225)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapState(StructureMapping.java:418)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.lambda$6(StructureMapping.java:209)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:351)
+	at java.base/java.util.LinkedHashSet.<init>(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1190)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:366)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapRegularStates(StructureMapping.java:212)
+	at org.yakindu.sct.model.sexec.transformation.ModelSequencer.transform(ModelSequencer.java:70)
+	at org.yakindu.sct.simulation.core.sexec.container.AbstractExecutionFlowSimulationEngine.init(AbstractExecutionFlowSimulationEngine.java:67)
+	at org.yakindu.sct.simulation.core.sexec.container.CycleBasedSimulationEngine.init(CycleBasedSimulationEngine.java:44)
+	at org.yakindu.sct.simulation.core.debugmodel.SCTDebugTarget.init(SCTDebugTarget.java:68)
+	at org.yakindu.sct.simulation.core.launch.AbstractSCTLaunchConfigurationDelegate.launch(AbstractSCTLaunchConfigurationDelegate.java:67)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.yakindu.sct.builder.SCTBuilder 2 0 2022-04-25 15:26:47.187
+!MESSAGE Cannot generate Code for Statechart /hu.bme.mit.yakindu.analysis/model_input/example.sct. The file contains errors.
+
+!ENTRY org.yakindu.sct.simulation.core 4 765 2022-04-25 15:26:47.805
+!MESSAGE An unexpected error ocurred during simulation.
+!STACK 0
+java.lang.NullPointerException
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping._init_create_4(SexecElementMapping.java:331)
+	at org.yakindu.sct.model.sexec.transformation.SexecElementMapping.create(SexecElementMapping.java:310)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping._mapState(StructureMapping.java:225)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapState(StructureMapping.java:418)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.lambda$6(StructureMapping.java:209)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.base/java.util.AbstractCollection.addAll(AbstractCollection.java:351)
+	at java.base/java.util.LinkedHashSet.<init>(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1190)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:366)
+	at org.yakindu.sct.model.sexec.transformation.StructureMapping.mapRegularStates(StructureMapping.java:212)
+	at org.yakindu.sct.model.sexec.transformation.ModelSequencer.transform(ModelSequencer.java:70)
+	at org.yakindu.sct.simulation.core.sexec.container.AbstractExecutionFlowSimulationEngine.init(AbstractExecutionFlowSimulationEngine.java:67)
+	at org.yakindu.sct.simulation.core.sexec.container.CycleBasedSimulationEngine.init(CycleBasedSimulationEngine.java:44)
+	at org.yakindu.sct.simulation.core.debugmodel.SCTDebugTarget.init(SCTDebugTarget.java:68)
+	at org.yakindu.sct.simulation.core.launch.AbstractSCTLaunchConfigurationDelegate.launch(AbstractSCTLaunchConfigurationDelegate.java:67)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.yakindu.sct.builder.SCTBuilder 2 0 2022-04-25 15:27:19.476
+!MESSAGE Cannot generate Code for Statechart /hu.bme.mit.yakindu.analysis/model_input/example.sct. The file contains errors.
+
+!ENTRY org.eclipse.help 4 0 2022-04-25 15:29:05.142
+!MESSAGE Required attribute "label" missing from "topic" element in "/org.yakindu.sct.doc.user/help/user-guide/c-domain-toc.xml" (skipping element)
+
+!ENTRY org.eclipse.help 4 0 2022-04-25 15:29:05.149
+!MESSAGE Required attribute "label" missing from "topic" element in "/org.yakindu.sct.doc.user/help/user-guide/scxml_domain-toc.xml" (skipping element)
